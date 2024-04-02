@@ -12,6 +12,7 @@ function Navbar() {
             </ul>
             <input type="text" className="search-bar" placeholder="Search..." />
             <a href="#" className="signup-button"> Sign Up</a>
+
             <a href="#" className="login-button"> Log In</a>
 
 
