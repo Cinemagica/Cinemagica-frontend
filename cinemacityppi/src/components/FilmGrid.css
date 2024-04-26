@@ -1,0 +1,19 @@
+/* FilmGrid.css */
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 10px; /* Space between grid items */
+}
+
+.film-container {
+    box-sizing: border-box;
+}
+
+.film-container img {
+    width: 100%;
+    height: auto;
+}
+
+.film-container p {
+    text-align: center;
+}

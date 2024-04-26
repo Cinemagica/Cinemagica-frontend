@@ -1,0 +1,23 @@
+.film-item-rec{
+    display: flex;
+    width: 25%;
+    padding: 40px;
+    margin-left: 40px;
+}
+
+.film-item-rec img{
+    width: 80%;
+    height: 80%;
+}
+
+.rec-film-holder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+    margin: auto 10%;
+    background-color: #61dafb;
+}
