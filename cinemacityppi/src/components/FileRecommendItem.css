@@ -3,6 +3,7 @@
     width: 25%;
     padding: 40px;
     margin-left: 40px;
+    background-color: #F5F5F5;
 }
 
 .film-item-rec img{
@@ -19,5 +20,5 @@
     width: 80%;
     height: 20%;
     margin: auto 10%;
-    background-color: #61dafb;
+    background-color: #F5F5F5;
 }

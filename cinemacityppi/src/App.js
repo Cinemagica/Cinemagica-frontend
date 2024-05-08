@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import FilmSlider from './components/FilmSlider';
 import FilmRecommender from "./components/FileRecommender";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         {/* Other components go here */}
           <FilmSlider />
           <FilmRecommender />
+          <Footer />
       </div>
   );
 }
