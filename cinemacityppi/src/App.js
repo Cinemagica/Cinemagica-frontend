@@ -3,16 +3,35 @@ import Navbar from './components/Navbar';
 import FilmSlider from './components/FilmSlider';
 import FilmRecommender from "./components/FileRecommender";
 import Footer from './components/Footer';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+const routerPaths = [
+
+    {
+        path: "/", element: [<Navbar />, <FilmSlider />,  <FilmRecommender />, <Footer />]
+
+    },
+    {
+        path: "/movies", element: [<Navbar />, <Footer />]
+
+    },
+    {
+        path: "/program", element:  <FilmSlider />
+
+    }
+]
+
+const router = createBrowserRouter(routerPaths);
+
 
 function App() {
   return (
+
       <div className="App">
-            <Navbar />
-        {/* Other components go here */}
-          <FilmSlider />
-          <FilmRecommender />
-          <Footer />
+          <RouterProvider router={router}>
+          </RouterProvider>
       </div>
+
   );
 }
 
