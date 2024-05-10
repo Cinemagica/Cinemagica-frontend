@@ -27,6 +27,36 @@ function MovieSlider() {
                 })}
             </Slider>
 
+            <h2>Coming Soon</h2>
+            <Slider {...settings}>
+                {films && films.map((movie, index) => {
+                    return (<div key={index}>
+                        <img src={movie.smallSrc} alt={movie.title}/>
+                    </div>);
+
+                })}
+            </Slider>
+
+            <h2>Comedy</h2>
+            <Slider {...settings}>
+                {films && films.map((movie, index) => {
+                    return (<div key={index}>
+                        <img src={movie.smallSrc} alt={movie.title}/>
+                    </div>);
+
+                })}
+            </Slider>
+
+            <h2>Action</h2>
+            <Slider {...settings}>
+                {films && films.map((movie, index) => {
+                    return (<div key={index}>
+                        <img src={movie.smallSrc} alt={movie.title}/>
+                    </div>);
+
+                })}
+            </Slider>
+
         </div>
     );
 }
