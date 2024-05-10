@@ -4,12 +4,12 @@ import './FileRecommendItem.css';
 import filmBase from "../data/films";
 
 function FilmRecommender(){
-    const [films, setFilms] = useState(filmBase);
+    const [films] = useState(filmBase);
     return (
         <div className="rec-film-holder">
             {films.map((film) => { return <FilmRecommendItem film={film} />; })}
         </div>
     );
-};
+}
 
 export default FilmRecommender;

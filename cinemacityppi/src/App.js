@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import FilmSlider from './components/FilmSlider';
 import FilmRecommender from "./components/FileRecommender";
 import Footer from './components/Footer';
+import MovieSlider from "./components/MovieSlider";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const routerPaths = [
@@ -12,11 +13,19 @@ const routerPaths = [
 
     },
     {
-        path: "/movies", element: [<Navbar />, <Footer />]
+        path: "/movies", element: [<Navbar />, <MovieSlider/>, <Footer />]
 
     },
     {
-        path: "/program", element:  <FilmSlider />
+        path: "/program", element:  [<Navbar />, <Footer />]
+
+    },
+    {
+        path: "/offers", element:  [<Navbar />, <Footer />]
+
+    },
+    {
+        path: "/menu", element:  [<Navbar />, <Footer />]
 
     }
 ]

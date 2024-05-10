@@ -12,4 +12,5 @@ const filmBase = [
 
 ];
 
-export default filmBase;
+
+export default filmBase ;

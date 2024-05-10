@@ -1,0 +1,21 @@
+/* src/components/MovieSlider.css */
+
+.movie-slider {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+
+}
+
+.movie-slider h2 {
+    margin-bottom: 20px;
+}
+
+.movie-slider img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-slider .slick-slide {
+    padding: 10px;
+}

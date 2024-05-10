@@ -41,6 +41,7 @@
 .slider{
     background:  #DC143C;
     padding-top: 1px;
+    height: auto;
 }
 
 h2.header-slider{
