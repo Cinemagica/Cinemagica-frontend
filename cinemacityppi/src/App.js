@@ -4,6 +4,8 @@ import FilmSlider from './components/FilmSlider';
 import FilmRecommender from "./components/FileRecommender";
 import Footer from './components/Footer';
 import MovieSlider from "./components/MovieSlider";
+import ProgramSelection from "./components/ProgramSelection";
+import MovieCard from "./components/MovieCard";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const routerPaths = [
@@ -17,7 +19,7 @@ const routerPaths = [
 
     },
     {
-        path: "/program", element:  [<Navbar />, <Footer />]
+        path: "/program", element:  [<Navbar />, <ProgramSelection/>, <Footer />]
 
     },
     {
