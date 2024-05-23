@@ -1,14 +1,14 @@
 // FilmGrid.js
 import React from 'react';
 import './FilmGrid.css';
-import SlideImgLoader from './SlideImgLoader'; // Import SlideImgLoader
+import SlideImgLoader from './SlideImgLoader';
 
 const FilmGrid = ({ films }) => {
     return (
         <div className="film-grid">
             {films.map((film) => (
                 <div key={film.id} className="film-container">
-                    <SlideImgLoader film={film} /> {/* Use SlideImgLoader to load film images */}
+                    <SlideImgLoader film={film} /> {}
                 </div>
             ))}
         </div>

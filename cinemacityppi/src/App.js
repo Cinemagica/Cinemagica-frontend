@@ -6,6 +6,9 @@ import Footer from './components/Footer';
 import MovieSlider from "./components/MovieSlider";
 import ProgramSelection from "./components/ProgramSelection";
 import MovieCard from "./components/MovieCard";
+import Offers from "./components/Offers";
+import Menu  from "./components/Menu";
+import Reservation from "./components/Reservation";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const routerPaths = [
@@ -23,11 +26,15 @@ const routerPaths = [
 
     },
     {
-        path: "/offers", element:  [<Navbar />, <Footer />]
+        path: "/program/reservation", element:  [<Navbar />,<Reservation/> , <Footer />]
 
     },
     {
-        path: "/menu", element:  [<Navbar />, <Footer />]
+        path: "/offers", element:  [<Navbar />, <Offers/>, <Footer />]
+
+    },
+    {
+        path: "/menu", element:  [<Navbar />, <Menu/>, <Footer />]
 
     }
 ]

@@ -50,11 +50,11 @@
     padding: 10px;
     cursor: pointer;
     transition: 0.2s ease-in;
-    background: none; /* Removes the default background */
-    border: 2px solid #000; /* Removes the default border */
-    outline: none; /* Removes the default outline */
-    font-family: inherit; /* Makes the button's font the same as its parent's font */
-    color: inherit; /* Makes the button's color the same as its parent's color */
+    background: none;
+    border: 2px solid #000;
+    outline: none;
+    font-family: inherit;
+    color: inherit;
     border-radius: 5px;
 }
 
@@ -62,4 +62,44 @@
     background: #DC143C;
     color: #fff;
     border: 2px solid #DC143C;
+}
+
+.program-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.program-image {
+    flex: 1;
+    max-width: 280px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.program-details {
+    flex: 2;
+}
+
+.program-hour {
+    padding: 7px 12px;
+    background-color: #C0C0C0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: "Rowdies", sans-serif;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.program-hour:hover {
+    background-color: #DC143C;
+
 }
